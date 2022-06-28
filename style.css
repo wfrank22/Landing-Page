@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 32px 64px;
+    gap: 16px;
 }
 .hero {
     flex-direction: column;
@@ -40,36 +41,89 @@ body {
     color: #E5E7EB;
 }
 
-button {
-    color: #F9FAF8;
-    background-color: #3882F6;
-    font-weight: 600;
-    border-radius: 8px;
-    padding: 8px 26px;
-    
-}
-
 .title-img {
     background-color: grey;
     width: 400px;
     height: 200px;
     display: flex;
     text-align: center;
-    line-height: 150px;
+    line-height: 200px;
 }
 
 .info-container {
     display: flex;
     flex-direction: column;
+    padding: 32px 64px;
+    align-items: center;
 }
 
 .info-header {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    padding-bottom: 32px;
 }
 
 .info {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.info1, .info2, .info3, .info4 {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    flex-basis: 150px;
+}
+
+.info-img {
+    height: 150px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 8px;
+    line-height: 150px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    background-color:#E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 64px;
+}
+
+.quote-author {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 64px 32px 64px;
+}
+
+.sign-up-container {
+    display: flex;
+    padding: 32px 64px;
+    margin: 64px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-header {
+    font-weight: bold;
+    color: #F9FAF8;
     display: flex;
 }
 
@@ -97,4 +151,21 @@ a:link, a:visited, a:hover, a:active{
 img {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    font-weight: 600;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #F9FAF8;
+    border-radius: 8px;
+    padding: 8px 26px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
 }
